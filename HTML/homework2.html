@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멋사 과제2</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="query.css">
+
+</head>
+<body>
+    <br><br>
+    <h1>멋쟁이사자처럼 스터디 정리</h1>
+    <br><br><br>
+    <div class = "menu"> <!-- 각각 해당하는 부분으로 이동 -->
+        <a href="#selector"><b>선택자</b></a>
+        <a href="#class"><b>가상클래스</b></a>
+        <a href="#backgroundAttribute"><b>background 속성</b></a>
+        <a href="#fontAttribute"><b>font 속성</b></a>
+    </div>
+    
+
+    <div id = "selector">
+        <h3>
+            <p class = "marginBottom"><mark>선택자</mark></p>
+        </h3> 
+
+        <p class = "marginBottom">선택자에는 id와 class가 있습니다.</p>
+        
+
+        <p>-id는 css를 주고 싶은 <span class = "fontRed">특정한 태그 1개가 있을 때</span> 사용합니다.</p>
+        <span id = "selectorId">id를 사용하여 CSS 스타일 적용한 예</span>
+        <p class = "fontRed">주의할 점: 중복되어서는 안됩니다!</p>
+        <br>
+
+        <p>-class는 비슷한 특성을 주고 싶은 태그들이 <span class = "fontRed">여러 개일 때</span> 사용합니다.</p>
+        <p class = "marginBottom"><span class = "selectorClass">class를 사용하여 CSS 스타일 적용한 예</span></p>
+    
+        <p>-부모 자식 선택자란 <span class = "fontRed">부모 태그를 이용해서 자식 태그에게 css 효과</span>를 줍니다.</p>
+    </div>
+
+   
+    <div id = "class">
+        <h3>
+            <p class = "marginBottom"><mark class = "marginBottom">가상클래스</mark></p>
+        </h3> 
+     
+
+        <p class = "marginBottom">가상클래스는 행동의 변화로도 <span class = "fontRed">CSS효과를 줄 수 있습니다.</span></p>
+    
+        
+        <div class = "contentsPadding"> 
+            <p class = "pActive">-active: 누르고 있는 순간</p>
+            <p class = "pHover">-hover: 마우스를 올리고 있을 때</p>
+        
+            <p class = "pVisited">
+                -visited: 마우스를 누르고 나서
+                <a href="https://www.daum.net/" target="_blank">다음</a>
+            </p>
+            
+            <p class = "pLink">
+                -link: 마우스 클릭 전
+                <a href = "https://www.weather.go.kr/" target = "_blank">방문 전</a>
+            </p>
+          
+            <p class = "pFocus">
+                -focus: 작성을 위해 클릭한 상태<br>
+                <textarea cols="30" rows="10">작성해보세요.</textarea>
+            </p>
+        </div>
+
+    </div>
+
+    
+    <div id = "backgroundAttribute">
+        <h3>
+            <p class = "marginBottom"><mark>background 속성</mark></p>
+        </h3> 
+
+        <p class = "marginBottom">
+            -<span id = "backgroudColor">background-color: 바탕색</span>
+        </p>
+
+        <p>
+            -background-image: 바탕에 이미지 삽입
+        </p>
+        <p id = "backgroundImage" class = "marginBottom"></p>
+
+        <p>
+            -background-repeat: 바탕에 삽입한 이미지의 반복 여부
+        </p>
+        <p>
+            background-repeat: no-repeat; 이라고 하면 반복을 하지않는다.
+        </p>
+        <p id = "backgroundRepeat"></p>
+
+    </div>
+
+    
+    <div id = "fontAttribute">
+        <h3>
+            <p class = "marginBottom"><mark>font 속성</mark></p>
+        </h3> 
+
+        <div class = "contentsPadding">
+            <p class = "fontRed">
+                -color: 단어의 색깔
+            </p>
+    
+            <p>
+                -text-align: 입력한 글자의 배치(center, left/right, justify)<br>
+                현재 웹페이지도 text-align: center; 적용
+            </p>
+
+            <p id = "fontSize">
+                -font-size: 글씨 크기
+            </p>
+    
+            <p id = "fontFmaily">
+                -font-fmaily: 글씨체
+            </p>
+    
+            <p id = "fontWeight">
+                -font-weight: 글씨 두께
+            </p>
+        </div>
+    </div>
+    <hr><br>
+
+</body>
+</html>

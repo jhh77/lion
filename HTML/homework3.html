@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문하기</title>
+    <link rel="stylesheet" href="homework3.css"> <!--css파일 연결-->
+</head>
+
+<body>
+
+    <h1>주문하실 메뉴를 선택해주세요!</h1> <!--큰 제목-->
+
+    <div class = "menu"> <!--메뉴들 묶음 div-->
+        <div class = "foodImg"> <!--메뉴사진들 묶음 div-->
+
+            <!--flexbox-->
+            <div>
+                <img src="media/food1.jpg" alt="라멘"><br> <!--img 태그와 줄바꿈-->
+                <input type="checkbox" name = "food" value = "9000">라멘 9000원 <!--checkbox 설정-->
+            </div>
+
+
+            <div>
+                <img src="media/food2.jpg" alt="돈까스"><br> <!--img 태그와 줄바꿈-->
+                <input type="checkbox" name = "food" value = "11000">돈까스 11000원 <!--checkbox 설정-->
+            </div>
+
+
+            <div> 
+                <img src="media/food3.jpg" alt="미니우동"><br> <!--img 태그와 줄바꿈-->
+                <input type="checkbox" name = "food" value = "3500">미니우동 3500원<!--checkbox 설정-->
+            </div>
+
+
+            <div>
+                <img src="media/food4.jpg" alt="돈가스덮밥"><br> <!--img 태그와 줄바꿈-->
+                <input type="checkbox" name = "food" value = "9900">돈가스덮밥 9900원<!--checkbox 설정-->
+            </div>
+            <!--flexbox end-->
+
+        </div> <!--메뉴사진들 묶음 div 끝-->
+        
+
+        <input type = "button" value = "주문하기" id = "order"> <!--메뉴를 모두 선택하면 주문으로 넘어갈 버튼-->
+    
+
+    </div> <!--메뉴들 묶음 div 끝-->
+
+
+</body>
+<script src = "check.js"></script> <!--Uncaught TypeError 오류 해결을 위해 js 파일 연결을 body 밑으로-->
+</html>

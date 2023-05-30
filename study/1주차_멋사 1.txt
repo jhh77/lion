@@ -1,0 +1,5 @@
+ctrl  + enter : 줄바꿈
+shift + alt + a : 주석
+tap: 태그 감싸기
+alt + shift + 아래방향 화살표
+alt + 화살표 : 위치 옮기기

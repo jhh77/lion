@@ -1,0 +1,19 @@
+#hh {
+    background-color: aqua;
+    font-size: 100px;
+    
+}
+
+div h2 { /*div 밑에 h2*/
+    border: 1px solid red; /*solid는 실선*/
+}
+
+div > h2 { /*바로 직계 자손. 바로 밑에 자손을 가르킨다*/
+    background-color: orange;
+}
+
+h1:hover { /*가상클래스. 마우스가 올라갔을 때*/
+    /* display: inline 인라인으로 바꾸기*/
+    border: 1px solid blue;
+    text-align: right; 
+}

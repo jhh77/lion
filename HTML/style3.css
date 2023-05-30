@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Trade+Winds&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Song+Myung&display=swap');
+
+/*br대신 margin 이용하기!!*/
+#selector, #class, #backgroundAttribute, #fontAttribute {
+   margin: 100px 0px 100px 0px;
+}
+
+.marginBottom { 
+   margin-bottom: 50px;
+}
+
+body { /*모든 콘텐츠가 나눔 고딕체 사용. 글씨는 가운데로*/
+   font-family: 'Nanum Gothic', sans-serif;
+   text-align: center;
+   background-color: rgb(255, 253, 254);
+   font-size: 17px;
+}
+
+
+#selectorId { /*id를 이용하여 css적용*/
+   border: 3px solid red;
+   background-color: yellow;
+   color: blue;
+}
+
+
+.fontRed { /*중요한 부분 폰트 색 빨강 적용*/
+   color: red;
+}
+
+
+.contentsPadding p { /*글자들 패딩*/
+   padding: 7px;
+}
+
+
+.selectorClass { /*class를 이용한 css 적용*/
+   border: 3px solid blue;
+   background-color: aqua;
+   color: black;
+}
+
+
+.pActive:active { /*마우스를 누르고 있는 순간 폰트색 하늘색으로*/
+   color:cornflowerblue; 
+}
+
+
+.pHover:hover { /*마우스를 올렸을 때 폰트 사이즈 30px으로*/
+   font-size: 30px;
+}
+
+
+.pVisited a:visited { /*마우스를 누르고 나서 하이퍼링크 색 녹색으로*/
+   color: rgb(72, 232, 43);
+}
+
+
+.pLink a:link { /*링크 방문 전 하이퍼링크 색 분홍으로*/
+   color: rgb(214, 52, 166);
+}
+
+
+.pFocus textarea:focus { /*작성을 위해 클릭하면 창이 커지게*/
+   font-size: 1.5em;
+}
+
+
+#backgroudColor { /*배경 색 속성*/
+   background-color: rgb(255, 208, 175);
+}
+
+
+#backgroundImage { /*배경에 이미지 삽입하는 속성*/
+   background-image: url(media/Test.jpg);
+   height: 200px;
+}
+
+
+#backgroundRepeat { /*배경에 삽입한 이미지 반복 여부 속성*/
+   background-image: url(media/Test.jpg);
+   height: 200px;
+   background-repeat: no-repeat;
+}
+
+#fontSize { /*글자크기 속성*/
+   font-size: 1.3em;
+}
+
+#fontFmaily { /*글씨체 속성*/
+   font-family: 'Song Myung', serif;
+}
+
+#fontWeight { /*글자두께 속성*/
+   font-weight: bold;
+}
+
+h3 mark {  /*소제목들 둥근모양*/
+   padding: 15px;
+   border-radius: 40px;
+   background-color: rgb(255, 221, 221);
+   color: black;
+}
+
+
+.menu { /*메뉴바*/
+   padding: 10px;
+   border-radius: 50px;
+   background-color:rgb(255, 221, 221);
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+}
+
+.menu a { /*링크 밑줄 삭제와 글자 색 설정*/
+   text-decoration: none;
+   color: black;
+}
+
+.menu a:hover { /*메뉴바 글자들에 마우스 올렸을 때 글자 하얀색으로*/
+   color: white;
+}
+
+.menu b { /*메뉴바 글자들 왼쪽과 오른쪽 마진*/
+   margin-right: 100px;
+   margin-left: 150px;
+}
+

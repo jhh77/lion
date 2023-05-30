@@ -1,0 +1,355 @@
+/* 사용 font -----------------------------------------------------------------------------------*/
+@font-face { /* 봄바람체 3.0 */
+    font-family: 'HSBombaram3_Regular'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /* 봄바람체 2.1*/
+    font-family: 'HSBombaram21-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /* 부크크 명조체 */
+    font-family: 'BookkMyungjo-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face { /* 조선궁서체 */
+    font-family: 'ChosunGs';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGs.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+/* body -----------------------------------------------------------------------------------*/
+body { 
+    margin: 0; /* margin 0 */
+    padding: 0; /* padding 0 */
+    background-color: #F5F5F5; /* 연한 하늘색으로 페이지 전체 색 설정 */ 
+}
+
+
+
+
+
+/* grid 설정 -----------------------------------------------------------------------------------*/
+.container { /* 그리드를 사용하여 전체적인 틀 잡기 */
+    display: grid; /* 그리드 설정 */ 
+    height: 100vh; /* height 전체 차지 */
+    grid-template-columns: 1fr; /* 열 크기 지정 */
+    grid-template-rows: 80px 450px minmax(2400px, auto) 50px; /* 행 크기 지정 */
+    grid-template-areas: 'menu'
+                         'hd'
+                         'contents'
+                         'ft';                 
+
+}
+
+
+
+
+
+/* menu(logo & nav) ----------------------------------------------------------------------------------- */
+.menu { /* menu */
+    grid-area: menu; /* 그리드 관련 설정 */
+    width: 960px; /* 내용이 960px만 차지 */
+    margin: 0 auto; /* 가운데로 모으기 위해 margin 설정 */    
+}
+
+.logo { /* 로고 부분 CSS */
+    margin: 15px 0px 15px 0px; /* 페이지 위에 딱 붙지 않게 margin 적용*/
+}
+
+.logo a { /* 로고의 링크 부분 CSS */
+    font-family: 'HSBombaram3_Regular'; /* 폰트 봄바람체 3.0 적용 */
+    font-size: 30px; /* 폰트 크기 30px */
+    float: left; /* float 적용하여 왼쪽으로 배치 */
+}
+
+.menu a:visited, a:link { /* 로고 부분 링크 CSS */
+    text-decoration: none; /* 링크 선(밑줄) 없애기 */
+    color: black; /* 글자색은 언제나 검은색으로 */
+}
+
+
+.pageNavButton li { /* 내비게이션 버튼들 CSS */
+    font-size: 17px; /* 글자 크기 17px */
+    font-family: 'HSBombaram3_Regular'; /* 봄바람체 3.0으로 폰트 설정 */
+    list-style-type: none; /* ul로 인한 li 동그라미 점들 없애기 */
+    float: left; /* float 적용하여 왼쪽부터 배치 */
+    margin-left: 20px; /* li들 붙지 않게 margin-left를 20px 적용 */
+    color:black; /* 폰트 색상은 검은색 */
+}
+
+.pageNav {
+    float: right; /* float 적용하여 내비게이션 위치 오른쪽 배치 */
+}
+
+menu::after { /* 로고와 메뉴바를 float로 위치 지정. 뒤로 밀려 넘쳐 흐르지 않게 하기 위한 코드 */
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+/* hd(header ----------------------------------------------------------------------------------- */
+.hd { /* header */
+    grid-area: hd; /* 그리드 관련 설정 */
+    position: relative; /* 배너 사진 블러 처리를 위한 코드 */
+    background-color: #ade1ff; /* 배경색상 연한 하늘색 설정 */
+}
+
+.hdTitle { /* 헤더 타이틀(WELCOME TO~ 부분) CSS */
+    font-family: 'BookkMyungjo-Bd'; /* 폰트 부크크명조체 설정*/
+    font-size: 40px; /* 폰트 사이즈 40px */
+    text-align: center; /* 폰트 가운데로 */
+    padding-top: 70px; /* 위에 딱 붙지 않게 padding 70px 설정 */
+
+    position: relative; /* 글자 블러 처리 되지 않게 하기 위한 코드 */
+    color: black; /* 폰트색 검은색으로 */
+    margin: 0px 0px 70px 0px; /* 밑에 콘텐트와 붙지 않게 margin 설정 */
+}
+
+
+.hdContent { /* 헤더 콘텐트(This page ~ 부분) CSS */
+
+    font-family: 'BookkMyungjo-Bd'; /* 폰트 부크크명조체 설정 */
+    font-size: 20px; /* 폰트 사이즈 20px */
+    text-align: center; /* 텍스트는 가운데로 */
+
+    position: relative; /* 글자 블러처리 되지 않게 하기 위한 코드 */
+    color: black; /* 폰트색 검은색으로 */
+    margin: 0; /* margin 0 설정 */
+}
+
+.hd:before { /* 글자가 사진에 가려지지 않게 !사진 블러 처리! 코드 */
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url(./media/logo_noline.png); /* 타이틀(배너) 사진 */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/* contents -----------------------------------------------------------------------------------*/
+.contents {
+    grid-area: contents; /* 그리드 관련 설정 */
+    width: 960px; /* 내용이 960px만 차지 */
+    margin: 0 auto; /* 가운데로 모으기 위해 margin 설정 */    
+}
+
+/* contents - article 1 */
+.atc1 { /* article 1 */
+    margin: 120px 0px 160px 0px; /* 다른 article과 간격을 주기 위해 margin 설정 */
+}
+
+/* contents - article 1 - emotion */
+.emotion { /* 이모티콘 묶음 div CSS */
+    width: 400px; /* width 400px 설정 */
+    margin: 0 auto; /* 가운데 정렬을 위해 */
+
+    display: flex; /* flexbox로 이모티콘들을 나열하기 위해 */
+    flex-direction: row; /* flexbox 행 기준 */
+    flex-wrap: nowrap; /* flexbox들이 밑으로 넘어가지 않고 한 줄로 나열 */
+    justify-content: space-between; /* width size에 맞춰 딱 맞게 나열되도록 */
+
+}
+
+.emotionBackground { /* 이모티콘들 플렉박스들 배경 관련 CSS */
+    background-color: #ffffff; /* 배경색상 하얀색 */
+    border-radius: 15px; /* 둥근 모서리를 위해 radius 적용 */
+    width: 90px; /* flexbox width 90px */
+    height: 90px; /* flexbox height 90px */
+}
+
+.emotionBackground i { /* 이모티콘들 CSS */
+    padding: 22px; /* 이모티콘들 flexbox 가운데로 배치하기 위해 padding 22px 설정 */
+}
+
+.middleMar { /* 이모티콘들과 짧은 소개글 간격을 띄우기 위해 만든 class(위 아래 div가 margin: 0 auto; 라서) */
+    margin-top: 50px; /* 이모티콘들과 간격을 띄우기 위해 margin-top 설정 */
+}
+
+
+/* contents - article 1 - 짧은 소개 */
+.shortIntroduce { /* 짧은 소개글 CSS */
+    text-align: center; /* 텍스트는 가운데로 */
+    font-family: 'BookkMyungjo-Bd'; /* 폰트 부크크명조체 설정 */
+    font-size: 16px; /* 폰트 사이즈 16px */
+    background-color: #ffffff; /* 배경색상 하얀색 */
+    border-radius: 10px; 
+    width: 500px; /* 내용이 500px만 차지 */
+    margin: 0 auto; /* 가운데로 모으기 위해 margin 설정 */
+    padding: 20px; /* 글이 위에 딱 붙지 않게 padding 20px 적용 */
+}
+
+
+
+/* contents - article 2 */
+.atc2 { /* article 2 */
+    margin: 50px 0px 160px 0px; /* 다른 article과 간격을 주기 위해 margin 설정 */
+}
+
+.atcTitle { /* article 2 제목 CSS */
+    font-size: 30px; /* 폰트 크기 30px */
+    font-family: 'BookkMyungjo-Bd'; /* 폰트 부크크명조체 설정 */
+    margin-left: 10px; /* 옆에 연필 아이콘과 간격을 두기 위해 margin-left 10px 설정 */
+}
+
+.personalityPicture { /* 성격 관련 사진들 묶음 CSS */
+    display: flex; /* flexbox 적용 */
+    flex-direction: row; /* 행 기준으로 나열 */
+    flex-wrap: nowrap; /* 밑에 줄로 넘어가지 않고 한 줄로 설정 */
+    justify-content: space-between; /* width size에 맞춰 딱 맞게 나열되도록 */
+}
+
+.pictureBackground { /* 성격 관련 사진들 flexbox CSS */
+    border-radius: 20px 0px 0px 0px; /* 왼쪽 상단 모서리만 둥글게 하기 위해 radius 적용 */
+    background-color: #d4eaed; /* 배경색상은 하늘색 */
+    width: 280px; /* flexbox width 280px */ 
+    height: 280px; /* flexbox height 280px */
+
+}
+
+.picture { /* 성격 관련 사진들(img 태그들) CSS */
+    width: 200px; /* 이미지 width 200px */
+    height: 200px; /* 이미지 height 200px */
+    padding: 40px; /* flexbox에 딱 붙지 않고 가운데로 보내기 위해 padding 40px 설정 */
+    border-radius: 30%; /* 사진 모서리를 둥근 사각형으로 만들기 위해 radius 설정 */
+}
+
+.personality { /* 성격 단어들 묶음 CSS */
+    display: flex; /* flexbox 적용 */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.wordBackground { /* 성격 단어들 flexbox CSS */
+    background-color: #d4eaed; /* 배경색상은 하늘색 */
+    border-radius: 0px 0px 20px 0px; /*오른쪽 하단 모서리만 둥글게 하기 위해 radius 설정 */
+    width: 280px; /* flexbox width 280px */
+    height: 60px; /* flexbox height 60px */
+}
+
+.personalityWord { /* 성격 단어들(p 태그들) CSS */
+    text-align: center; /* 텍스트 가운데로 */
+    font-family: 'HSBombaram21-Regular'; /* 폰트 봄바람체 2.1 설정 */
+    margin: 0; /* 모든 margin은 0 */
+}
+
+
+
+/* contents - article 3 */
+.atc3 { /* article 3 */
+    margin: 50px 0px 150px 0px; /* 다른 article과 간격을 주기 위해 margin 설정 */
+    /* 위에 타이틀과 50px 간격, atc4와 150px 간격 */
+}
+
+.thingsType { /* 좋아하는 것, 싫어하는 것 제목 묶음 div */
+    display: flex; /* flexbox 적용 */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.thingsTitle { /* 'What I like & What I hate' flexbox CSS */
+    background-color: #ffffff; /* 배경색상은 하얀색 */
+    border-radius: 20px 20px 0px 0px; /* 상단만 모서리가 둥글도록 20px씩 설정 */
+    width: 455px; /* flexbox width 455px */
+    height: 80px; /* flexbox height 80px */
+    margin-bottom: 30px; /* 좋아하는 것, 싫어하는 것 사진 영역과 30px 간격을 두기 위해 margin 30px 설정 */
+}
+
+.type { /*What I like & What I hate 제목들(p 태그) CSS */
+    text-align: center; /* 텍스트 가운데로 */
+    font-family: 'ChosunGs'; /* 폰트 조선궁서체 설정 */
+    font-size: 30px; /* 폰트 크기 30px */
+    margin: 25px 0px 25px 0px; /* 글자들 박스 가운데로 맞추기 위해 margin 설정 */
+}
+
+.things { /* 좋아하는 것, 싫어하는 것 사진들 영역 묶음 div */
+    display: flex; /* flexbox 적용 */
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+}
+
+.likeHate { /* 좋아하는 것, 싫어하는 것 사진들 영역 묶음 flexbox CSS */
+    background-color: #d4eaed; /* 배경색상 하늘색 설정 */
+    border-radius: 0px 0px 20px 20px; /* 하단만 모서리 둥글게 하기 위해 radius 설정 */
+    width: 455px; /* flexbox width 455px */
+    height: 470px; /* flexbox height 470px */
+    
+    display: flex; /* 각각의 사진들에도 flexbox 적용 */
+    flex-wrap: wrap; /* 2개씩 한 줄에 보내기 위해 wrap 설정 */
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.likeThings { /* 사진들 flexbox CSS */
+    width: 180px; /* flexbox width 180px */
+    height: 180px; /* flexbox height 180px */
+    margin: 22px; /* flexbox들이 붙지 않게 margin 22px 적용 */
+
+}
+
+.thingsPicture { /* 사진들(img 태그) CSS */
+    width: 180px; /* 이미지 width 180px */
+    height: 180px; /* 이미지 height 180px */
+    border-radius: 100%; /* 사진을 둥글게 만들기 위해 radius 100%로 설정 */
+}
+
+
+
+/* contents - article 4 */
+.atc4 { /* article 4 */
+    text-align: center; /* 텍스트 가운데로 */
+    font-family: 'BookkMyungjo-Bd'; /* 폰트 부크크명조체 설정 */
+    background-color: #ffffff; /* 배경색상은 하얀색 */
+    border-radius: 40px; /* 모서리 둥글게 하기 위해 radius 40px 설정 */
+    padding: 20px; /* 안에 글들이 위에 딱 붙지 않고 가운데로 가도록 padding 20px 설정 */
+
+    width: 500px; /* 내용이 500px만 차지 */
+    margin: 0 auto; /* 가운데로 모으기 위해 margin 설정 */
+}
+
+.outro { /* 마무리 말 CSS */
+    margin-top: 40px; /* 연필모양 아이콘과 간격을 두기 위해 margin-top 40px 설정 */
+}
+
+
+
+
+
+/* ft(footer -----------------------------------------------------------------------------------*/
+.ft { /* footer*/
+    grid-area: ft; /* 그리드 관련 설정 */
+    text-align: center; /* 텍스트 가운데로 */
+    font-weight: bold; /* 폰트 굵게 */
+    font-family: 'BookkMyungjo-Bd'; /* 폰트 부크크명조체 설정 */
+    background-color: #ffffff; /* 배경색상 하얀색 */
+}

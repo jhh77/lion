@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoHyeHyeon-Introduce</title>
+
+    <link rel="stylesheet" href="page.css"> <!-- CSS 파일 연결 -->
+    <!-- fontawesome 사용을 위한 코드 -->
+    <script src="https://kit.fontawesome.com/1ae82cd2be.js" crossorigin="anonymous"></script> 
+</head>
+
+
+<body>
+    <div class = "container"> <!-- 그리드 설정을 위한 div(전체 묶음) 영역 -->
+
+        <!--menu---------------------------------------------------------------->
+        <div class = "menu"> <!-- menu(로고와 메뉴) 영역 -->
+            <h1 class = "logo"> <!-- 로고 -->
+                <a href="mypage.html">Jo Hye Hyeon</a> <!-- 현재 페이지(mypage.html)로 연결 -->
+            </h1>
+
+            <div class = "pageNav"> <!-- 내비게이션 -->
+               <ul class = "pageNavButton"> <!-- 내비게이션 버튼 -->
+                    <li><a href = "mypage.html">Home</a></li> <!-- HOME(mypage.html)로 이동 -->
+                    <li>About</li> <!-- 다른 웹페이지와 연결 X -->
+                    <li>News</li> <!-- 다른 웹페이지와 연결 X -->
+                </ul> 
+            </div> 
+
+        </div> <!-- menu 영역 끝 -->
+        
+
+
+        <!--header---------------------------------------------------------------->
+        <div class = "hd"> <!-- header(배너) 영역 -->
+
+            <h2 class = "hdTitle">WELCOME TO MY PAGE!</h2> <!-- header(배너) 제목 -->
+            <p class = hdContent>This page introduces Jo Hye Hyeon.</p> <!-- header(배너) 글 -->
+
+        </div> <!-- header(배너) 영역 끝 -->
+       
+      
+
+
+        <!--contents---------------------------------------------------------------->
+        <div class = "contents"> <!-- contents(메인부분) 영역 -->
+
+            <div class = "atc1"> <!-- article 1 영역 -->
+                <div class = "emotion"> <!-- 이모티콘들 영역 -->
+                    <!-- flexbox 박스 적용 -->
+                    <div class = "emotionBackground"><i class="fas fa-grin-beam fa-3x"></i></div>
+                    <div class = "emotionBackground"><i class="fas fa-laugh-squint fa-3x"></i></div>
+                    <div class = "emotionBackground"><i class="fas fa-grin-hearts fa-3x"></i></div>
+                    <div class = "emotionBackground"><i class="fas fa-laugh-wink fa-3x"></i></div>
+
+                </div> <!-- 이모티콘들 영역 끝-->
+
+                <div class = "middleMar"></div> <!-- 중간에 margin 주기 위한 클래스를 가진 div -->
+
+                <div class = "shortIntroduce"> <!-- 짧은 소개글 영역 -->
+                    <p>Hello!</p>
+                    <p>I'm JoHyeHyeon. Nice to meet you!</p>
+                    <p>I'm glad to introduce myself.</p>
+                    <p>Let me tell you about my personality and what I like.</p>
+                    <p>Let's go!</p>
+                </div> <!-- 짧은 소개글 영역 끝 -->
+
+            </div> <!-- article-1 영역 끝 -->
+
+
+            <i class="fas fa-pencil fa-2x"></i> <!-- 연필 모양 아이콘 -->
+            <span class = "atcTitle">My personality</span> <!-- article 2 제목 -->
+
+            <div class = "atc2"> <!-- article 2 영역 -->
+                <div class = "personalityPicture"> <!--성격 관련 사진들 div로 묶음-->
+                    <!-- flexbox 적용 -->
+                    <div class = "pictureBackground"> <!-- 사진 뒤에 배경 class -->
+                        <img src="media/calm_big.jpg" alt="calm" class = "picture"> <!--calm 사진-->
+                    </div>
+
+                    <div class = "pictureBackground">
+                        <img src="media/careful.jpg" alt="careful" class = "picture"> <!--careful 사진-->
+                    </div>
+
+                    <div class = "pictureBackground">
+                        <img src="media/diligent.jpg" alt="diligent" class = "picture"> <!--dilitent 사진-->
+                    </div>
+                </div> <!-- 성격 관련 사진 영역 끝 -->
+
+                <div class = "personality"> <!-- 성격 단어들 div로 묶음 -->
+                    <!-- flexbox 적용 -->
+                    <div class = "wordBackground"> <!-- 단어들 배경 -->
+                        <p class = "personalityWord">Calm</p> <!-- 성격 단어들 -->
+                    </div>
+
+                    <div class = "wordBackground">
+                        <p class = "personalityWord">Careful</p> <!-- 성격 단어들 -->
+                    </div>
+
+                    <div class = "wordBackground">
+                        <p class = "personalityWord">Diligent</p> <!-- 성격 단어들 -->
+                    </div>
+                </div> <!-- 성격 단어들 영역 끝 -->
+
+            </div> <!-- article 2 영역 끝 -->
+
+
+
+            <i class="fas fa-pencil fa-2x"></i> <!-- 연필 모양 아이콘 -->
+            <span class = "atcTitle">What I like & What I hate</span> <!-- article 3 제목 -->
+
+            <div class = "atc3"> <!-- article 3 영역 -->
+                <div class = "thingsType"> <!-- 좋아하는 것 & 싫어하는 것 제목 영역 -->
+                    <!-- flexbox 적용 -->
+                    <div class = "thingsTitle"><p class = "type">what I like</p></div> <!-- 좋아하는 것 제목 -->
+                    <div class = "thingsTitle"><p class = "type">what I hate</p></div> <!-- 싫어하는 것 제목-->
+                </div> <!-- 좋아하는 것 & 싫어하는 것 제목 영역 끝 -->
+
+
+                <div class = "things"> <!-- 좋고 싫은 것들 제목과 사진 영역 -->
+                    <!-- flexbox 적용 -->
+                    <div class = "likeHate"> <!--좋아하는 것들과 싫어하는 것들 묶음(flexbox를 적용을 위해) -->
+                        <!-- 좋아하는 것들 부분 -->
+                        <!-- flexbox 적용 -->
+                        <div class="likeThings"><img src="media/cat.jpg" alt="Cat" class = "thingsPicture"></div>
+                        <div class="likeThings"><img src="media/dog.jpg" alt="dog" class = "thingsPicture"></div>
+                        <div class="likeThings"><img src="media/macarons.jpg" alt="macarons" class = "thingsPicture"></div>
+                        <div class="likeThings"><img src="media/piano.jpg" alt="piano" class = "thingsPicture"></div>
+                    </div>
+                    <hr> <!-- 구분선 주기 -->
+
+                    <div class = "likeHate"> <!--좋아하는 것들과 싫어하는 것들 묶음(flexbox를 적용을 위해) -->
+                        <!-- 싫어하는 것들 부분 -->
+                        <!-- flexbox 적용 -->
+                        <div class="likeThings"><img src="media/noise.jpg" alt="noise" class = "thingsPicture"></div>
+                        <div class="likeThings"><img src="media/running.jpg" alt="running" class = "thingsPicture"></div>
+                        <div class="likeThings"><img src="media/sunlight.jpg" alt="sunlight" class = "thingsPicture"></div>
+                        <div class="likeThings"><img src="media/thrillRide.jpg" alt="thrill-ride" class = "thingsPicture"></div>
+                    </div>
+                </div> <!-- 좋고 싫은 것들 제목과 사진 영역 끝 -->
+
+            </div> <!-- article 3 영역 끝 -->
+
+
+            <div class = "atc4"> <!-- article 4 영역-->
+                <i class="fas fa-pencil fa-3x"></i> <!-- 연필모양 아이콘 -->
+
+                <div class = "outro"> <!-- 마무리 말 -->
+                    <p>Thank you for visiting my website!</p>
+                    <p>I was fun in the process of creating a website.</p>
+                    <p>I will update the new contents soon.</p>
+                    <p>Have a nice day!</p>
+                </div> <!-- 마무리 말 끝 -->
+                
+            </div> <!-- article 4 영역 끝-->
+
+
+        </div> <!-- contents 영역 끝-->
+        
+
+
+        <!--footer---------------------------------------------------------------->
+        <div class = "ft"> <!-- footer 영역 -->
+            <p>&copy 2023 JHH. All rights reserved</p>
+        </div> <!-- footer 영역 끝 -->
+        
+
+
+    </div> <!-- container 영역 끝 -->
+
+</body>
+</html>

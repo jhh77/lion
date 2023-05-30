@@ -1,0 +1,107 @@
+/* style 태그 말고 CSS만 활용하기! */
+/* id 이름은 알아볼 수 있는 id명으로 설정 */
+/* class인 경우에는 . id는 #*/
+/* >은 하나씩 찾아가는 개념 */
+/* div b 이런거는 밑에 모든 b 태그에 적용할 때 */
+
+
+
+/* 페이지 그리드 설정 */
+.container {
+    display: grid;
+    /* grid-gap: 1px; */
+    height: 100vh;
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-rows: minmax(120px, auto) minmax(50px, auto) 1fr 50px;
+    grid-template-areas: 'header header header'
+                         'nav nav nav'
+                         'aside section article'
+                         'footer footer footer';
+}
+
+h1 mark {
+    padding: 15px;
+    border-radius: 40px;
+    background-color: #bcdeeb;
+}
+
+.nav {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #91bfe0;
+    color: white;
+}
+
+.nav b {
+    font-size:20px;
+    margin-right: 100px;
+}
+
+.noMargin{
+    margin-right: 0px;
+}
+
+.section img {
+    width: 150px;
+    height: 150px;
+}
+
+.section input {
+    font-size: 10px;
+}
+
+.footer b {
+    margin-right: 80px;
+}
+
+
+.footer > .end { 
+    text-align: left;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+}
+
+.container div form {
+    font-size: 5px;
+    text-align: right;
+}
+
+
+.container div {
+    text-align: center;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+
+.header {
+    grid-area: header;
+    background-color: #e6f6fe;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #f3fbff;
+}
+
+.section {
+    grid-area: section;
+    background-color: #d9f4ff;
+}
+
+.article {
+    grid-area: article;
+    background-color: #f3fbff;
+}
+
+.container li {
+    text-align: justify;
+}
+
+.footer {
+    grid-area: footer;
+}
+

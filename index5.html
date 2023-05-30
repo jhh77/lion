@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src = "EX04.js"></script> -->
+</head>
+<body>
+    <button onclick = "clickbtn()">주문하시겠습니까?</button>
+    <p id = "demo"></p>
+
+    <script>
+        function clickbtn() {
+            let text;
+            let product = window.prompt('어떤 걸 주문하시겠습니까?', 'cola'); //cola는 기본값
+            switch(product) {
+                case 'cola':
+                    text = '콜라는 2천원입니다.';
+                    break;
+                case 'beer':
+                    text = '맥주는 4천원입니다.';
+                    break;
+                case 'milk':
+                    text = '우유는 3천원입니다.';
+                    break;
+                case 'coffee':
+                    text = '커피는 천원입니다.';
+                    break;
+
+                default:
+                    text = '그런 물건을 팔지 않습니다.'; 
+            }
+            document.getElementById('demo').innerHTML = text; 
+            //이 문서에 demo라는 id를 가져오고 그 안에 text를 작성하라
+        }
+    </script>
+</body>
+</html>

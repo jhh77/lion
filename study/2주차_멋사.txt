@@ -1,0 +1,12 @@
+link 또는 import 사용
+id는 하나에 효과를 줄 때
+class는 여러 개에 효과를 줄 때 사용
+상속?
+background-color : 바탕색
+background-image : 바탕에 이미지 삽입 (url 사용)
+background-repet: no-repeat(사진 반복 X)
+ctrl + shift + p -> codesnap 검색
+ctrl + Q: codesnap 단축키
+! -> tap: 기본 html 코드 생성
+<style> 태그를 html 안에 넣으려면 <head> 안에
+노션

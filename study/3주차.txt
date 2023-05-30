@@ -1,0 +1,58 @@
+absolute: 기준이 본인이 속한 부모 태그의 영역
+fixed: 콘텐츠를 벗어나서 window를 기준으로
+relative: 초기에 본인이 있던 위치를 기준으로
+static: 디폴트. 위에서 아래로 순서대로 배치
+sticky: 본인 자리에 있으나 스크롤링하면 고정(흔히 쓸듯?)
+
+
+
+
+
+document.querySelector('body') -> body 선택
+
+console.log() 
+콘솔에서 처리하거나 입력한 것을 화면에 출력
+일시적인 결과 보기 위해서(화면 출력 X)
+
+variable
+선언: 변수를 사용하겠다 공지
+할당: 변수 안에 값을 넣음
+var, let const
+
+var(협업에서 거의 사용하지 않음)
+초기값 없이 변수 선언 가능
+초기값 필요 없음
+재할당, 재선언 가능
+
+let(많이 쓰임)
+초기값 없이 변수 선언 가능
+var과 다르게 재선언 불가(재할당은 가능)
+선언과 할당을 같이 하는 게 좋음
+
+const(상수)
+초기값 없이 선언 불가능
+재할당, 재선언 불가능
+절대 변하지 않을 데이터를 넣을 때 사용
+
+범위 관련
+globally scope: 전역
+lacally blocked: 지역
+
+primitive type
+종류: number, string, boolean, null, undefined, symbol(를 제외한 나머지 object type)
+
+String; 문자 ' '
+Number: 숫자
+
+숫자로 바꿀 수 있는 문자를 나누기 하면 연산이 됨
+
+Boolean(true, false)
+
+Null
+typeof를 하면 object가 나옴. (오류) null의 타입은 null이다.
+
+Undefined: 값 할당 X
+
+Symbol(사용 잘 안 함.)
+
+음수는 역순임 -1 -2 -3 -4

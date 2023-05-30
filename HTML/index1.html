@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멋사 1회 스터디</title>
+</head>
+<!-- 주석 -->
+<body>
+    <!-- 제목 콘텐츠 -->
+    <!-- 숫자가 클수록 글자 사이즈 작아짐 -->
+    <h1>안녕하세요!</h1>
+    <h2>hello</h2>
+    <h3>wow</h3>
+    <h4>wooo</h4>
+    <h5>ohhhhh</h5>
+    <h6>last</h6>
+
+    <hr> <!-- 선긋기 / 주제 분리 -->
+
+    <!-- 하나의 문단 -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem, ipsum dolor.</p>
+
+    <br><br> <!-- 줄바꿈 / 여백 용도로는 별로 -->
+
+    <p>Lorem ipsum dolor sit.</p>
+    
+    <!-- 다른 사이트로 넘어감 / 링크 -->
+    <a href="https://naver.com">네이버</a> 
+    <a href="https://naver.com" target = "_blank">네이버-blank</a> <!-- 다른 새 창에서 -->
+    <a href="https://naver.com" target = "_self">네이버-self</a> <!-- 현재 사이트에서 넘어감 -->
+
+    <br><br>
+
+    <!-- 이미지 안에 문서 삽입 src는 필수, alt는 생략가능 -->
+    <img src="media/Test.jpg" alt="so cute cat"> 
+    <img src="media/kakao.jpg" alt="">
+
+    <!-- 사진에 a 태그를 걸면 사진을 누르면 해당 사이트로 들어간다 -->
+    <a href="https://naver.com" target = "blank">
+        <img src="media/together.jpg" alt="we are so cute. woooooo">
+    </a>
+
+    <div>
+        <a href="https://naver.com">Naver</a>
+    </div>
+
+
+
+    <!-- ol은 정렬이 중요한 목록 (보통 숫자 목록으로 표현)
+    ul 정렬이 중요하지 않은 목록 (점 목록)
+    li 반드시 정력 목록 비정력 목록 메뉴 밑에 있어야 함 -->
+
+    <br>
+    <ol type = "a">
+        <li>점심 먹기</li>
+        <li>저녁 먹기</li>
+        <li>아침 먹기</li>
+    </ol>
+
+    <ul>
+        <li>사과 사기</li>
+        <li>라면 먹기
+            <ol>
+                <li>물을 끓인다</li>
+                <li>스프와 면을 넣는다</li>
+            </ol>
+        </li>
+        <li>방청소 하기
+            <ul>
+                <li>청소기</li>
+                <li>물걸레질</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+
+    <!-- div태그는 중요! / block level / 줄바꿈이 됨 -->
+    <div>red</div>
+    <div>blue</div>
+    <div>green</div> 
+    <br>
+
+    <!-- span 어떤 특성의 값을 서로 공유하는 요소를 묶을 때 사용 / inline level / 줄바꿈 없이 이어서 출력됨 -->
+    <span>red</span>  <!-- span 태그가 각각 3개라 띄어쓰기가 적용된 것. 하나의 태그에 다 쓰면 쭉 이어서 출력 -->
+    <span>blue</span>
+    <span>green</span>
+    <br><br>
+
+    <!-- button 태그 / 클릭이 가능한 버튼 -->
+    <!-- a 태그 안에 넣으면(자식 요소로) 이동하는 버튼이 생성 -->
+    <a href="https://naver.com" target = "blank">
+        <button name = "click" value = "click" type = "Submit">click me!</button>
+    </a>
+
+    <button>
+        <a href="https://naver.com">네이버</a>
+    </button>
+
+    <br><br>
+
+    <!-- method post: 사용자가 입력한 정보가 보이지 않음 -->
+    <!-- method get 사용자의 정보가 보임 -->
+    <form action="method-post" method = "post">
+        <!-- input -->
+    <!-- for와 id가 같아야한다! 컴퓨터에게 이 정보는 name 정보라는 것을 알리기 위해 작성 -->
+    <label for="name">비밀번호</label>
+    <input type="text" id = "name">
+
+    <div>
+        <label for="id">id</label>
+        <input type="text" id = "id">
+    </div>
+    
+    <!-- 비밀번호 가리기 -->
+    <label for="password">password</label>
+    <input type="password" id = "password">
+
+    <!-- label for & input id 는 컴퓨터에세 둘의 정보를 알려주기 위함
+    input name은 컴퓨터에게 input이름을 알려주기 위함 -->
+    <!-- name의 역할: userId는 사용자의 id값을 가리키는 거군!-->
+
+    <br>
+    <button type = "submit">제출</button>
+
+    </form>
+
+    
+
+   
+
+    <br>
+
+</body>
+</html>

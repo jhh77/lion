@@ -1,0 +1,28 @@
+안녕하세요!
+저는 조혜현입니다. 만나서 반가워요!
+저에 대해 소개하게 되어 좋네요.
+제가 어떤 성격이고, 무엇을 좋아하는지 말해보도록 하겠습니다.
+시작하겠습니다!
+
+#C4D8DB\
+
+960px margin 0 auto인 영역들
+menu
+contents
+
+flex 박스 겹치는 부분
+
+.emotion
+    display: flex; /* flexbox로 이모티콘들을 나열하기 위해 */
+    flex-direction: row; /* flexbox들 행 기준 */
+    flex-wrap: nowrap; /* flexbox들이 밑으로 넘어가지 않고 한 줄로 나열 */
+    justify-content: space-between; /* width size에 맞춰 딱 맞게 나열되도록 */
+
+
+.personalityPicture 얘는 없어도 될듯 class 자체가
+
+.personality class 삭제
+
+.thingsType class 삭제
+
+.things

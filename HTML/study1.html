@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공부를 해봅시다</title>
+</head>
+<body>
+    <!-- 제목 콘텐츠 태그 <hn> -->
+    <h1 title = "테스트용입니다.">저에 대해 소개합니다!</h1>    
+    <h2>저에 대해 소개합니다!</h2>
+    <h3>저에 대해 소개합니다</h3>
+    <h4>저에 대해 소개합니다!</h4>
+    <h5>저에 대해 소개합니다!</h5>
+    <h6>저에 대해 소개합니다!</h6>
+
+    <!-- 단락 나누기 <p>  -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, ducimus!</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <!-- 수평선 긋기 hr -->
+    <p>안녕하세요? 저는 조혜현입니다.</p>
+    <hr>
+    <p>라면을 맛있게 끓이는 방법</p>
+
+    <!-- 새로운 줄로 넘어가기 br -->
+    <h3>새로운 줄 넘어가기</h3>
+    <hr>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, enim. <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><br>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, amet deserunt ab soluta accusamus sequi.
+
+    <!-- 텍스트 꾸미기 -->
+    <p>
+        <b>진하게</b><br>
+        <strong>중요한</strong><br>
+        <em>기울어서</em><br>
+        <i>이탤릭으로 강조</i><br>
+        보통문자 <small>한 단계 작은 문자</small><br>
+        <del>글자에 글 긋기</del><br>
+        <ins>밑줄 긋기</ins><br>
+        보통 문자의 <sup>윗첨자</sup><br>
+        보통 문자의 <sub>아래첨자</sub><br>
+        <mark>하이라이팅(형광펜)</mark><br>
+    </p>
+
+    <!-- div와 span -->
+    <h3>사랑</h3>
+    <hr>
+    <div style = "background-color:skyblue; padding:40px 480px 40px 480px;">내가 사람의 방언과
+    천사의 말을 할지라도 <span style = "color:red">사랑</span>이 된다</div>
+
+    <!-- 이미지 삽입 img -->
+    <h1>이미지를 삽입해보자!</h1>
+    <hr>
+    <img src="media/kakao.jpg" alt="카카오 사진" width = "200px" height = "400px">
+    <img src="media/ganade.jpg" alt="주소가 잘못된 사진">
+
+    <!-- 리스트 만들기 <ol> <ul> <li> -->
+    <!-- <li> 태그는 리스트 태그 안에 있어야한다. -->
+    <!-- <ol>은 순서가 있는 리스트 태그 -->
+    <h3>라면을 끓이는 순서</h3>
+    <hr>
+    <ol type = "I">
+        <li>물을 끓인다.</li>
+        <li>라면과 스프를 넣는다</li>
+        <li>파를 썰어 넣는다</li>
+        <li>5분 후 먹는다</li>
+    </ol>
+
+    <!-- <ul>은 순서가 없는 리스트 태그 -->
+    <h2>내가 좋아하는 음식</h2>
+    <hr>
+    <ul>
+        <li>마라탕</li>
+        <li>곱창</li>
+        <li>포케</li>
+        <li>떡볶이</li>
+    </ul>
+
+    <!-- 중첩으로 리스트 만들기 -->
+    <h3>내가 사는 이유</h3>
+    <hr>
+    <ul>
+        <li>내가 좋아하는 음식 많아요</li>
+        <ul>
+            <li>감자탕</li>
+            <li>스파게티</li>
+            <li>올레국수</li>
+        </ul>
+        <li>라면 먹기 좋아해요</li>
+        <ol>
+            <li>물 끓이기</li>
+            <li>라면과 스프 넣기</li>
+            <li>계란 넣기</li>
+            <li>맛있게 먹기</li>
+        </ol>
+        <li>여름에는 바다로</li>
+        <li>가을에는 산으로</li>
+    </ul>
+
+    <!-- 다른 HTML 페이지로 넘어가는 하이퍼링크 <a> -->
+    <h3>하이퍼링크 만들기</h3>
+    <hr>
+    <a href="https://www.naver.com/" target="_blank" style = "color:aquamarine">NAVER</a>
+
+    <!-- 이미지에 하이퍼링크를 달아보기 -->
+    <h3>이미지에 하이퍼링크 만들기</h3>
+    <hr>
+    <a href="https://www.naver.com/">
+        <img src="media/together.jpg" alt="">
+    </a>
+
+    <!-- 간단한 입력 폼 만들기 -->
+    <h3>간단한 입력 폼 만들기</h3>
+    <hr>
+    <form method="post">
+        <input type="text" name = "search">
+        <input type="submit">
+    </form>
+
+    <!-- 입력 폼 만들어보기 -->
+    <h3>입력 폼 만들어보기</h3>
+    <hr>
+    <form action="user_form" method = "get">
+        <div style = margin:10px;>
+            <label for="name">name:</label>
+            <input type="text" id = "name" name = "userName">
+        </div>
+        <div style = margin:10px;>
+            <label for="id">id:</label>
+            <input type="text" id = "id" name = "userId">
+        </div>
+        <div style = margin:10px;>
+            <label for="pwd">password:</label>
+            <input type = "password" id = "pwd" name = "userPwd">
+        </div>
+        <input type = "submit">
+        <button type = "submit">제출</button>
+    </form>
+
+    <!-- input 태그의 여러가지 속성 -->
+    <h2>input 태그의 여러가지 속성</h2>
+    <hr>
+    <input type="text" name = "text" value = "text"><br>
+    <input type="password" name = "password" value = "password"><br>
+    <input type="file" name = "file"><br>
+    <input type="checkbox" name = "checkbox" value = "checkbox"><br>
+    <input type="radio" name = "radio" value = "radio"><br>
+    <input type="button" name = "button" value = "버튼"><br>
+    <input type="reset" name = "reset" value = "다시"><br>
+    <input type="submit" name = "submit" value = "제출"><br>
+
+
+
+    
+</body>
+</html>

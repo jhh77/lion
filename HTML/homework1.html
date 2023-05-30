@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멋사 과제</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="myQuery.css">
+</head>
+<body>
+    <div class = "container">
+        <div class ="header">
+            <!-- 로그인 폼 -->
+            <form action="user_form" method="get">
+                <span>
+                    <label for="id">ID:</label>
+                    <input type="text" id = "id" name = "userId">
+                </span>
+                <span>
+                    <label for="password">PASSWORD:</label>
+                    <input type="password" id = "password" name = "userPwd">
+                </span>
+
+                <button type = "submit">Login</button>
+            </form>
+            <br>
+            <h1>
+                <mark>My daily Diary</mark>
+            </h1>
+        </div>
+
+        <div class ="nav">
+          
+                <b>일기</b> 
+                <b>달력</b> 
+                <b>버킷리스트</b> 
+                <b id = "noMargin">설정</b> 
+            
+        </div>
+
+        <div class ="aside">
+            <p><b>날짜 바꾸기</b></p>
+            <hr>
+            <br>
+            <input type="date" value = "2023-03-20">
+        </div>
+
+        <div class ="section">
+            <br>
+            <img src="media/user.png" alt="프로필 사진을 올려주세요"><br>
+            <input type = "file"><br><br>
+
+            <textarea cols="30" rows="10">오늘 하루 일기를 적어주세요!</textarea><br>
+
+            <label for="upload"></label>
+            <button>업로드</button>
+            <label for="reset"></label>
+            <button type = "reset">초기화</button>
+        </div>
+
+        <div class ="article">
+            <p><b>To-do List</b></p>
+            <hr>
+            <br>
+            <ul>
+                <li>전공 과제</li>
+                <ol type = "1">
+                    <li>운영체제(Dday-1)</li>
+                    <li>자바(Dday-5)</li>
+                    <li>파이썬(Dday-10)</li>
+                </ol>
+                <br><li>청소</li>
+                <ol type = "1">
+                    <li>정리하기</li>
+                    <li>청소기 돌리기</li>
+                    <li>물걸레질 하기</li>
+                </ol>
+                <br><a href="https://lms.hywoman.ac.kr/ilos/main/main_form.acl" target = "_blank"><li>강의 듣기</li></a>
+                <br><li>복습하기</li>
+            </ul>
+        </div>
+
+        <div class ="footer">
+            <hr>
+            <div class = "end">
+                <b>회사소개</b>
+                <b>이용약관</b>
+                <b>개인정보처리방침</b>
+                <b>도움말</b>
+            </div>
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>

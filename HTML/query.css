@@ -1,0 +1,16 @@
+@media(max-width : 800px) {
+    .menu b{
+        margin-right: 30px;
+        margin-left: 40px;
+        font-size: 17px;
+    }
+
+    .menu {
+        padding: 7px;
+    }
+
+    body {
+        font-size: 13px;
+    }
+
+}

@@ -1,0 +1,28 @@
+선택자에는 id와 class가 있습니다.
+id는 css를 주고 싶은 특정한 태그 1개가 있을 때 사용합니다.
+중복되어서는 안됩니다!
+class는 비슷한 특성을 주고 싶은 태그들이 여러 개일 때 사용합니다.
+
+부모 자식 선택자란 부모 태그를 이용해서 자식 태그에게 css 효과를 줍니다.
+
+가상클래스는 행동의 변화로도 css효과를 줄 수 있습니다.
+active: 누르고 있는 순간
+hover: 마우스를 올리고 있을 때
+visited: 마우스를 누르고 나서
+link: 마우스 클릭 전
+focus: 작성을 위해 클릭한 상태
+
+background 속성에 대해서
+background-color : 바탕색
+background-image: 바탕에 이미지 삽입
+background-repeat: 바탕에 삽입한 이미지의 반복여부
+
+글씨와 관련된 속성
+color: 단어의 색깔
+text-align: 입력한 글자의 배치(center, left/right, justify)
+font-size: 글씨의 크기
+font-fmaily: 글씨체
+font-weight: 글씨두께
+
+
+

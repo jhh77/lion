@@ -1,0 +1,42 @@
+/* body ------------------------------------------*/
+body { 
+    text-align: center; /* 텍스트 가운데로 */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*제목-------------------------------------------*/
+h1 { /* 제목 css */
+   margin-bottom: 50px; /* 메뉴 사진과 간격을 주기 위해 margin-bottom 설정 */
+}
+
+
+
+/*menu -------------------------------------------*/
+.menu { /* menu css */
+    width: 450px; /* 내용 450px만 차지 */
+    margin: 0 auto; /* 내용이 가운데로 오게하기 위해 margin 설정 */
+}
+
+.foodImg { /* foodImg(메뉴사진 묶음 div) css */
+    display: flex; /* 밑의 div들을 flexbox로*/
+    flex-direction: row; /* 행기준으로 나열 */
+    flex-wrap: wrap; /* box들이 밑으로 내려갈 수 있게 wrap 설정 */
+    justify-content: space-between; /* width에 맞춰 딱 맞게 나열 */
+
+}
+
+.foodImg img { /* 음식 사진들 css */
+    width: 170px; /* 사진 폭 170px */
+    height: 170px; /* 사진 높이 170px */
+}
+
+.foodImg div { /* flexbox css */
+    margin-bottom: 40px; /* box들과 붙지 않게 margin-bottom 설정 */
+}
+
+#order { /* 주문하기 버튼 css */
+    margin-top: 20px; /* 메뉴사진 영역과 간격을 주기 위해 margin-top 설정 */
+}
